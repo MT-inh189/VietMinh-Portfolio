@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="">
+    	$(document).ready(function(){
+			$('#header__mobile-icon').click(function(){
+				$('.header__list').toggleClass('show');
+			});
+		});
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('.darkmode').click(function(){
+                $('body').toggleClass('dark')
+    			$('.main').toggleClass('dark')
+    			$('.container').toggleClass('dark')
+    			$('.darkmode').toggleClass('active')
+    			$('.introduce').toggleClass('dark')
+    			$('.introduce__description').toggleClass('dark')
+    			$('.introduce__description-text1').toggleClass('dark')
+    			$('.introduce__description-text2').toggleClass('dark')
+    			$('.introduce__description-text2sub').toggleClass('dark')
+    			$('.introduce__description-text3').toggleClass('dark')
+    			$('.section').toggleClass('dark')
+    			$('.section__heading').toggleClass('dark')
+    			$('.section__para').toggleClass('dark')
+    			$('.section__folder-item-amout').toggleClass('dark')
+    			$('.section__skill-name').toggleClass('dark')
+    			$('.section__skill-icon').toggleClass('dark')
+    			$('.life').toggleClass('dark')
+    			$('.life__title-heading').toggleClass('dark')
+    			$('.favour').toggleClass('dark')
+    			$('.favour__heading-label').toggleClass('dark')
+    			$('.favour__content-title').toggleClass('dark')
+
+    		})
+    	})
+    </script>
+    <script type="text/javascript">
+    	$(window).scroll(function(){
+    		var scroll = $(window).scrollTop(),
+    		dh = $(document).height(),
+    		wh = $(window).height();
+    		scrollPercent = (scroll / (dh-wh)) * 100;
+    		$('#scrollbar').css('height', scrollPercent + '%');
+    	})
+    </script>
+    <title>My Portfolio</title>
+</head>
+<body>
+	<div id="scrollbar"></div>
+    <div class="main" style="height: 1500px">
+    	<header class="header">
+    		<div class="header__nav">
+    			<div class="header__nav-logo">
+    				<img src="./image/logo.webp" class="header__logo-img">
+    			</div>
+    			<ul class="header__list">
+    				<li class="header__item">
+    					<a href="#" class="header__item-link">Home</a>
+    				</li>
+    				<li class="header__item">
+    					<a href="#partabout" class="header__item-link">About</a>
+    				</li>
+    				<li class="header__item">
+    					<a href="#" class="header__item-link">Contact</a>
+    				</li>
+    			</ul>
+    			<ul class="darkmode">
+    				<li class="darkmode-btn">
+    					<span class="darkmode-title">Dark</span>
+    					<span class="darkmode-title">Light</span>
+    				</li>
+    			</ul>
+    			<!-- Menu mobile -->
+    			<div class="header__mobile-menu">
+    				<i class="fal fa-bars" id="header__mobile-icon"></i>
+    			</div>
+    		</div>
+    	</header>
+
+    	<div class="background-main">
+    		<div class="introduce">
+	    		<div class="introduce__ava">
+	    			<img src="./image/mainava.jpg" class="introduce__ava-img">
+	    		</div>
+
+	    		<div class="introduce__description" style="width: 30%">
+	    			<h6 class="introduce__description-text1">Hello everybody, i am</h6>
+	    			<h3 class="introduce__description-text2" id="type" style="margin-bottom: 0 !important">PhamHoang</h3>
+	    			<h3 class="introduce__description-text2sub">VietMinh</h3>
+	    			<h4 class="introduce__description-text3">Junior Front-end Developer</h4>
+	    			<p class="introduce__description-text4">Look towards the sun and you won't be able to see the darkness. That's what sunflowers are doing.</p>
+	    			<ul class="introduce__description-list">
+	    				<li class="introduce__description-item">
+	    					<a href="" class="introduce__description-link">
+	    						<i class="fal fa-calendar-alt introduce__description-icon"></i>
+	    						28 st October, 2020
+	    					</a>
+	    				</li>
+	    				<li class="introduce__description-item">
+	    					<a href="" class="introduce__description-link">
+	    						<i class="fal fa-phone-alt introduce__description-icon"></i>
+	    						035 40 70 xxx
+	    					</a>
+	    				</li>
+	    				<li class="introduce__description-item">
+	    					<a href="" class="introduce__description-link">
+	    						<i class="fal fa-envelope introduce__description-icon"></i>
+	    						28index.react1811@gmail.com
+	    					</a>
+	    				</li>
+	    				<li class="introduce__description-item">
+	    					<a href="" class="introduce__description-link">
+	    						<i class="fal fa-home-lg-alt introduce__description-icon"></i>
+	    						ThuDuc, HoChiMinh City
+	    					</a>
+	    				</li>
+	    			</ul>
+	    			<ul class="introduce__description-social">
+	    				<li class="introduce__description-icon">
+	    					<a href="https://www.facebook.com/Phvm189" class="introduce__social-link">
+	    						<i class="fab fa-facebook-f introduce__social-icon"></i>
+	    					</a>
+	    				</li>
+	    				<li class="introduce__description-icon">
+	    					<a href="" class="introduce__social-link">
+	    						<i class="fab fa-pinterest-p introduce__social-icon"></i>
+	    					</a>
+	    				</li>
+	    				<li class="introduce__description-icon">
+	    					<a href="https://github.com/MT-inh189" class="introduce__social-link">
+	    						<i class="fab fa-github introduce__social-icon"></i>
+	    					</a>
+	    				</li>
+	    			</ul>
+	    		</div>
+    		</div>
+    	</div>
+
+    	<!-- Container -->
+    	<div class="container">
+    		<div class="section row" id="partabout">
+    			<div class="col col-half section__about">
+    				<h4 class="section__heading">About Myself</h4>
+    				<p class="section__para">Hello, i'm sure you know who i am so i'll tell you about other things you don't know. I have a family with four people consists of my father, mother, brother and me, my favourite things are working out, reading books and talk with a person that name Minh Thu. If you want to know more about myself, why dont't you go to my accout and says some things? I will waiting for you over there.</p>
+    				<div class="section__folder row">
+    					<div class="col col-third section__folder-human">
+    						<div class="section__folder-item">
+    							<i class="fal fa-thumbs-up section__folder-icon" style="padding-top: 2px"></i>
+    							<h4 class="section__folder-item-amout">80%</h4>
+    							<p class="section__folder-des">Good Man</p>
+    						</div>
+    					</div>
+
+    					<div class="col col-third section__folder-human">
+    						<div class="section__folder-item">
+    							<i class="fal fa-times-square section__folder-icon"></i>
+    							<h4 class="section__folder-item-amout">20%</h4>
+    							<p class="section__folder-des">Bad Man</p>
+    						</div>
+    					</div>
+
+    					<div class="col col-third section__folder-human">
+    						<div class="section__folder-item">
+    							<i class="far fa-check section__folder-icon"></i>
+    							<h4 class="section__folder-item-amout">0%</h4>
+    							<p class="section__folder-des">Brute Man</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<!-- Skills -->
+    			<div class="col col-half section__job">
+    				<div class="section__skill" id="skills-section">
+    					<!-- Photography -->
+    					<div class="section__skill-item">
+    						<h4 class="section__skill-name">
+    							Photography 55%
+    							<i class="fal fa-camera-retro section__skill-icon"></i>
+    						</h4>
+    						<div class="section__skill-box">
+    							<div class="section__skill-rate">
+    								<div class="section__skill-progress" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%" data-progress="55"></div>
+    							</div>
+    						</div>
+    					</div>
+    					<!-- Html -->
+    					<div class="section__skill-item">
+    						<h4 class="section__skill-name">
+    							HTML 90%
+    							<i class="fab fa-html5 section__skill-icon"></i>
+    						</h4>
+    						<div class="section__skill-box">
+    							<div class="section__skill-rate">
+    								<div class="section__skill-progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%" data-progress="90"></div>
+    							</div>
+    						</div>
+    					</div>
+    					<!-- Css -->
+    					<div class="section__skill-item">
+    						<h4 class="section__skill-name">
+    							SASS 82%
+    							<i class="fab fa-sass section__skill-icon"></i>
+    						</h4>
+    						<div class="section__skill-box">
+    							<div class="section__skill-rate">
+    								<div class="section__skill-progress" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%" data-progress="82"></div>
+    							</div>
+    						</div>
+    					</div>
+    					<!-- Javascript -->
+    					<div class="section__skill-item">
+    						<h4 class="section__skill-name">
+    							JAVASCRIPT 70%
+    							<i class="fab fa-js section__skill-icon"></i>
+    						</h4>
+    						<div class="section__skill-box">
+    							<div class="section__skill-rate">
+    								<div class="section__skill-progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%" data-progress="70"></div>
+    							</div>
+    						</div>
+    					</div>
+
+    					<div class="section__skill-item">
+    						<h4 class="section__skill-name">
+    							GITHUB 30%
+    							<i class="fab fa-github section__skill-icon"></i>
+    						</h4>
+    						<div class="section__skill-box">
+    							<div class="section__skill-rate">
+    								<div class="section__skill-progress" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%" data-progress="30"></div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<!-- My Jouney -->
+    		<div class="jouney">
+    			<div class="jouney__box">
+    				<ul class="jouney__box-list">
+    					<!-- Reading books -->
+    					<li class="jouney__box-item">
+    						<span></span>
+    						<div class="jouney__events">
+    							<div class="jouney__events-date" style="padding-right: 88px !important">
+    								<p class="jouney__events-data">October 2019 to present</p>
+    							</div>
+    							<div class="jouney__events-work">
+    								<h4 class="jouney__events-name">Reading Books</h4>
+    								<p class="jouney__events-para">"Book likes a friend, you have more, you enjoy more"</p>
+    							</div>
+    						</div>
+    					</li>
+    					<!-- Coding -->
+    					<li class="jouney__box-item">
+    						<span></span>
+    						<div class="jouney__events">
+    							<div class="jouney__events-date">
+    								<p class="jouney__events-data">March 2021 to present</p>
+    							</div>
+    							<div class="jouney__events-work">
+    								<h4 class="jouney__events-name">Front-end Coder</h4>
+    								<p class="jouney__events-para">It's never too late to start something.</p>
+    							</div>
+    						</div>
+    					</li>
+    					<!-- Workout -->
+    					<li class="jouney__box-item">
+    						<span></span>
+    						<div class="jouney__events">
+    							<div class="jouney__events-date">
+    								<p class="jouney__events-data">August 2019 to present</p>
+    							</div>
+    							<div class="jouney__events-work">
+    								<h4 class="jouney__events-name">Workout</h4>
+    								<p class="jouney__events-para">I have from 1 hour to 1 hour 30 minutes to do workout everyday.</p>
+    							</div>
+    						</div>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+
+    		<!-- Around a goodboy life -->
+    		<div class="life">
+    			<div class="life__box">
+    				<div class="life__box-title">
+    					<h2 class="life__title-heading">Around my life</h2>
+    					<p class="life__title-description">Here, i will reveal to you some things in my life <br> Let's see what is it!</p>
+    				</div>
+
+    				<div class="row life__content">
+    					<div class="col col-third life__content-col">
+    						<div class="life__content-item">
+    							<i class="fal fa-file-code life__content-icon"></i>
+    							<h4 class="life__content-name">Developer</h4>
+    							<p class="life__content-para">Every time i have a project, i will start and write the code, this job can be a bit boring and sometimes tiring, but if you are passionate, everything will be easy.</p>
+    						</div>
+    					</div>
+
+    					<div class="col col-third life__content-col">
+    						<div class="life__content-item life__content--tablet">
+    							<i class="fal fa-comment-alt-music life__content-icon"></i>
+    							<h4 class="life__content-name">Listen to music</h4>
+    							<p class="life__content-para">After hard working days, i usually spend a little time in the evening listening to music, it helps me feel more comfortable and relax.</p>
+    						</div>
+    					</div>
+
+    					<div class="col col-third life__content-col">
+    						<div class="life__content-item">
+    							<i class="far fa-image-polaroid life__content-icon"></i>
+    							<h4 class="life__content-name">Takes photo</h4>
+    							<p class="life__content-para">Trips always make us have more experiences, for me personally, i choose to take pictures as a hobby to go here and there with my friends.</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<!-- Feature -->
+    		<div class="favour">
+    			<div class="favour__heading">
+    				<h2 class="favour__heading-label">My lastest featured images</h2>
+    				<p class="favour__heading-description">Who are in extremely love with photography</p>
+    			</div>
+
+    			<div class="row favour__content">
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./image/bluesky.jpg" class="favour__content-img">
+    							<a href="./image/bluesky.jpg" class="light">
+    								<img src="./image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Sunset & Stage</h4>
+    							<p class="favour__content-des">View Picture</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./image/man.jpg" class="favour__content-img">
+    							<a href="./image/man.jpg" class="light">
+    								<img src="./image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">People With friendliness</h4>
+    							<p class="favour__content-des">Excited Picture</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./image/room.jpg" class="favour__content-img">
+    							<a href="./image/room.jpg" class="light">
+    								<img src="./image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Architecture</h4>
+    							<p class="favour__content-des">Low Light Picture</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./image/towel.jpg" class="favour__content-img">
+    							<a href="./image/towel.jpg" class="light">
+    								<img src="./image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Remote Tower</h4>
+    							<p class="favour__content-des">View Picture</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./image/bride.jpg" class="favour__content-img">
+    							<a href="./image/bride.jpg" class="light">
+    								<img src="./image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Architecture With Nature</h4>
+    							<p class="favour__content-des">View Picture</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./image/landmark.jpg" class="favour__content-img">
+    							<a href="./image/landmark.jpg" class="light">
+    								<img src="./image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Buildings And Nature</h4>
+    							<p class="favour__content-des">View Picture</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<!-- Slider -->
+    		
+    	</div>
+
+    	<footer class="footer">
+    		<div class="footer__main row">
+    			<div class="col footer__main-col" style="width: 41.66667%">
+	    			<h3 class="footer__title">About Me</h3>
+	    			<p class="footer__paragraph">Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.</p>
+	    			<p class="footer__nocopyright">Copyright ©2021 All rights reserved | This template is made with <i class="fa fa-heart-o"></i> by <a href="https://www.facebook.com/Phvm189">VietMinh</a></p>
+    			</div>
+    			<div class="col footer__main-col" style="width: 41.66667%">
+    				<h3 class="footer__title">Newsletter</h3>
+    				<p class="footer__paragraph">Stay updated with my latest trends</p>
+    				<form class="footer__form" >
+    					<input type="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required class="footer__form-input">
+
+    					<input type="submit" name="" class="footer__form-submit">
+    				</form>
+    			</div>
+    			<div class="col footer__main-col" style="width: 16.66667%">
+    				<h3 class="footer__title">Follow Me</h3>
+    				<p class="footer__paragraph">Let us be social</p>
+    				<ul class="footer__social-list">
+    					<li class="footer__social-item">
+    						<a href="https://www.facebook.com/truongthi.minhthu.71" class="footer__social-link">
+    							<i class="fab fa-facebook footer__social-icon"></i>
+    						</a>
+    					</li>
+    					<li class="footer__social-item">
+    						<a href="https://www.instagram.com/doris_1811_/" class="footer__social-link">
+    							<i class="fab fa-instagram footer__social-icon"></i>
+    						</a>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</footer>
+    </div>
+</body>
+</html>
